@@ -134,6 +134,11 @@ public class IngresarVehiculo extends javax.swing.JFrame {
         });
 
         jComboBoxMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxMarca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxMarcaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -232,19 +237,17 @@ public class IngresarVehiculo extends javax.swing.JFrame {
 
     private void jComboBoxTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTipoActionPerformed
 
-
-
-
-
-
-
         
     }//GEN-LAST:event_jComboBoxTipoActionPerformed
 
     private void jButtonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVolverActionPerformed
+        ListarVehiculosView lvv = new ListarVehiculosView();
+        Menu menu = new Menu();
         
         
-
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
+        dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonVolverActionPerformed
 
@@ -331,6 +334,10 @@ public class IngresarVehiculo extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonLimpiarActionPerformed
+
+    private void jComboBoxMarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxMarcaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxMarcaActionPerformed
 
     /**
      * @param args the command line arguments

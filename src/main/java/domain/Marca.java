@@ -27,8 +27,8 @@ public class Marca {
         this.pais = pais;
     }
     
-//    @Override
-//public String toString() {
-//    return this.nombre; // Así el combo mostrará "Renault", "Ford", etc.
-//}
+    @Override
+    public String toString() {
+    return this.nombre; // Así el combo mostrará "Renault", "Ford", etc.
+    }
 }
