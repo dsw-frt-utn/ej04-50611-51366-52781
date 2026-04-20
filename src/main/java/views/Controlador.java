@@ -1,6 +1,8 @@
 package views;
 
 import data.Persistencia;
+import domain.Marca;
+import domain.Sucursal;
 import domain.Vehiculo;
 import domain.VehiculoTipo;
 import java.util.ArrayList;
@@ -30,5 +32,17 @@ public class Controlador {
            }
         }
         return new double[] {consumoElectricos, consumoCombustible};
+    }
+
+    public static ArrayList<Marca> getMarcas(){
+        return Persistencia.getMarcas();
+    }
+    
+    public static ArrayList<Sucursal> getSucursales(){
+        return Persistencia.getSucursales();
+    }
+    
+    public static void registrarVehiculo(Vehiculo nuevo) {
+        Persistencia.getVehiculos().add(nuevo);
     }
 }
